@@ -114,7 +114,11 @@ export default function ContactSection() {
                         <Input
                           placeholder="Company Name"
                           className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all"
-                          {...field}
+                          value={field.value || ""}
+                          onChange={field.onChange}
+                          onBlur={field.onBlur}
+                          name={field.name}
+                          ref={field.ref}
                         />
                       </FormControl>
                       <FormMessage />
@@ -152,7 +156,7 @@ export default function ContactSection() {
                       <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                         Inquiry Type
                       </FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                         <FormControl>
                           <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all">
                             <SelectValue placeholder="Select inquiry type" />
@@ -179,7 +183,7 @@ export default function ContactSection() {
                     <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                       Assets Under Management (Optional)
                     </FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                       <FormControl>
                         <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all">
                           <SelectValue placeholder="Select AUM Range" />

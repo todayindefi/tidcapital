@@ -1,5 +1,5 @@
-import { AlertTriangle } from "lucide-react";
-import { SiX, SiLinkedin, SiTelegram } from "react-icons/si";
+import { AlertTriangle, Twitter } from "lucide-react";
+import { SiLinkedin, SiTelegram } from "react-icons/si";
 import tidCapitalLogo from "@assets/TID CAPITAL (2)_1751466284297.png";
 
 export default function Footer() {
@@ -61,7 +61,7 @@ export default function Footer() {
             </ul>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <SiX className="w-5 h-5" />
+                <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <SiLinkedin className="w-5 h-5" />
