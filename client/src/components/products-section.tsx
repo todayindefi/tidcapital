@@ -36,7 +36,7 @@ export default function ProductsSection() {
               Stablecoin Yield Vaults
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Conservative yield strategies focused on major stablecoins (USDC, USDT, DAI) with emphasis on capital preservation and consistent returns. Target APY: 8-15%.
+              Conservative yield strategies focused on major stablecoins (USDC, USDT, DAI) with emphasis on capital preservation and consistent returns. Target APY: 12-18%.
             </p>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
               <li className="flex items-center">
@@ -65,7 +65,7 @@ export default function ProductsSection() {
               ETH Yield Farming Vaults
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Strategic ETH-based yield opportunities including liquid staking, DeFi lending, and LP strategies. Target APY: 12-25% with managed volatility exposure.
+              Strategic ETH-based yield opportunities including liquid staking, DeFi lending, and LP strategies. Target APY: 10-20% with managed volatility exposure.
             </p>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
               <li className="flex items-center">

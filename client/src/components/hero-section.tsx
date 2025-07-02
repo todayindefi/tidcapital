@@ -59,11 +59,11 @@ export default function HeroSection() {
                 <div className="text-lg text-gray-600 dark:text-gray-300">Curated Strategies</div>
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
                   <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-2xl font-bold text-tid-red">8-15%</div>
+                    <div className="text-2xl font-bold text-tid-red">12-18%</div>
                     <div className="text-gray-600 dark:text-gray-300">Stablecoin APY</div>
                   </div>
                   <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-2xl font-bold text-tid-red">12-25%</div>
+                    <div className="text-2xl font-bold text-tid-red">10-20%</div>
                     <div className="text-gray-600 dark:text-gray-300">ETH APY</div>
                   </div>
                 </div>

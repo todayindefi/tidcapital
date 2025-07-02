@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
-import tidCapitalLogo from "@assets/TID CAPITAL_1751460338488.png";
+import tidCapitalLogo from "@assets/TID CAPITAL (1)_1751465805399.png";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,42 +30,45 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
             <div className="flex items-center">
-              <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto" />
+              <img src={tidCapitalLogo} alt="TID Capital" className="h-7 w-auto" />
             </div>
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden lg:flex space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-gray-700 dark:text-gray-300 hover:text-tid-red dark:hover:text-tid-red transition-colors"
+                  className="text-gray-700 dark:text-gray-300 hover:text-tid-red dark:hover:text-tid-red transition-colors text-sm font-medium"
                 >
                   {item.label}
                 </button>
               ))}
             </div>
           </div>
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://todayindefi.com"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-tid-red dark:hover:text-tid-red transition-colors hidden sm:block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Today in DeFi
-            </a>
-            <a
-              href="https://tidresearch.com"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-tid-red dark:hover:text-tid-red transition-colors hidden sm:block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              TID Research
-            </a>
+          <div className="flex items-center space-x-3">
+            <div className="hidden lg:flex items-center space-x-4 text-xs">
+              <a
+                href="https://todayindefi.com"
+                className="text-gray-500 dark:text-gray-400 hover:text-tid-red transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Today in DeFi
+              </a>
+              <span className="text-gray-300 dark:text-gray-600">|</span>
+              <a
+                href="https://tidresearch.com"
+                className="text-gray-500 dark:text-gray-400 hover:text-tid-red transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TID Research
+              </a>
+            </div>
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="h-9 w-9"
+              className="h-8 w-8"
             >
               {theme === "light" ? (
                 <Moon className="h-4 w-4" />
@@ -75,14 +78,14 @@ export default function Navigation() {
             </Button>
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-tid-red hover:bg-tid-red-dark text-white hidden sm:inline-flex"
+              className="bg-tid-red hover:bg-tid-red-dark text-white text-sm px-4 py-2 hidden sm:inline-flex"
             >
-              Contact Us
+              Contact
             </Button>
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-5 w-5" />
+                <Button variant="ghost" size="icon" className="lg:hidden h-8 w-8">
+                  <Menu className="h-4 w-4" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-80">
