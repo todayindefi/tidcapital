@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(0, 84%, 60%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* TID Capital brand colors */
+  --tid-red: hsl(0, 84%, 60%);
+  --tid-red-light: hsl(0, 84%, 70%);
+  --tid-dark: hsl(217, 32%, 17%);
+  --tid-slate: hsl(215, 25%, 27%);
+  --tid-gray: hsl(215, 20%, 65%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(0, 84%, 60%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* TID Capital brand colors for dark mode */
+  --tid-red: hsl(0, 84%, 65%);
+  --tid-red-light: hsl(0, 84%, 75%);
+  --tid-dark: hsl(217, 32%, 15%);
+  --tid-slate: hsl(215, 25%, 25%);
+  --tid-gray: hsl(215, 20%, 70%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-tid-red {
+    color: var(--tid-red);
+  }
+  
+  .text-tid-red-light {
+    color: var(--tid-red-light);
+  }
+  
+  .text-tid-dark {
+    color: var(--tid-dark);
+  }
+  
+  .text-tid-slate {
+    color: var(--tid-slate);
+  }
+  
+  .text-tid-gray {
+    color: var(--tid-gray);
+  }
+  
+  .bg-tid-red {
+    background-color: var(--tid-red);
+  }
+  
+  .bg-tid-red-light {
+    background-color: var(--tid-red-light);
+  }
+  
+  .bg-tid-dark {
+    background-color: var(--tid-dark);
+  }
+  
+  .bg-tid-slate {
+    background-color: var(--tid-slate);
+  }
+  
+  .bg-tid-gray {
+    background-color: var(--tid-gray);
+  }
+  
+  .border-tid-red {
+    border-color: var(--tid-red);
+  }
+  
+  .hover\:bg-tid-red-dark:hover {
+    background-color: hsl(0, 84%, 50%);
+  }
+  
+  .hover\:text-tid-red:hover {
+    color: var(--tid-red);
+  }
+  
+  .hover\:border-tid-red:hover {
+    border-color: var(--tid-red);
+  }
+}
