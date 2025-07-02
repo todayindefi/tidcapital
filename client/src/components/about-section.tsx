@@ -19,12 +19,7 @@ export default function AboutSection() {
     }
   ];
 
-  const stats = [
-    { value: "15+", label: "Years Combined Experience" },
-    { value: "$50M+", label: "Assets Under Management" },
-    { value: "500+", label: "Research Publications" },
-    { value: "25+", label: "Institutional Clients" }
-  ];
+
 
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
@@ -57,19 +52,7 @@ export default function AboutSection() {
           })}
         </div>
 
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Team & Credentials
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl font-bold text-tid-red">{stat.value}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   );

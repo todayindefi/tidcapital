@@ -1,4 +1,4 @@
-import { Search, Shield, Settings, BarChart3, Link, Users } from "lucide-react";
+import { Search, Shield, Settings, BarChart3 } from "lucide-react";
 
 export default function CapabilitiesSection() {
   const capabilities = [
@@ -21,16 +21,6 @@ export default function CapabilitiesSection() {
       icon: BarChart3,
       title: "Performance Analytics",
       description: "Real-time tracking of vault performance, risk metrics, and comparative analysis against benchmarks and alternatives."
-    },
-    {
-      icon: Link,
-      title: "Protocol Integration",
-      description: "Strategic partnerships and integrations with leading DeFi protocols to access exclusive opportunities and enhanced yields."
-    },
-    {
-      icon: Users,
-      title: "Community Insights",
-      description: "Leveraging the Today in DeFi community and research network for early identification of emerging opportunities."
     }
   ];
 

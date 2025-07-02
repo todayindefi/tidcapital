@@ -85,11 +85,11 @@ export default function ResearchSection() {
                   <div className="text-sm text-gray-600 dark:text-gray-300">Research Reports</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-red">500+</div>
+                  <div className="text-2xl font-bold text-tid-red">300+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Protocols Analyzed</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-red">50K+</div>
+                  <div className="text-2xl font-bold text-tid-red">17K+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Community Members</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">

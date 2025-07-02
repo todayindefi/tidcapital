@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
-import tidCapitalLogo from "@assets/TID CAPITAL (1)_1751465805399.png";
+import tidCapitalLogo from "@assets/TID CAPITAL (2)_1751466284297.png";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

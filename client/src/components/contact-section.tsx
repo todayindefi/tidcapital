@@ -186,10 +186,12 @@ export default function ContactSection() {
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="1m-10m">$1M - $10M</SelectItem>
-                        <SelectItem value="10m-50m">$10M - $50M</SelectItem>
-                        <SelectItem value="50m-100m">$50M - $100M</SelectItem>
-                        <SelectItem value="100m+">$100M+</SelectItem>
+                        <SelectItem value="under-100k">{"<$100K"}</SelectItem>
+                        <SelectItem value="100k-500k">$100K - $500K</SelectItem>
+                        <SelectItem value="500k-1m">$500K - $1M</SelectItem>
+                        <SelectItem value="1m-5m">$1M - $5M</SelectItem>
+                        <SelectItem value="5m-10m">$5M - $10M</SelectItem>
+                        <SelectItem value="over-10m">{">$10M"}</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
