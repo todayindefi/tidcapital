@@ -79,59 +79,67 @@
 }
 
 @layer utilities {
-  .text-tid-red {
-    color: var(--tid-red);
+  .text-tid-blue {
+    color: var(--tid-blue);
   }
   
-  .text-tid-red-light {
-    color: var(--tid-red-light);
+  .text-tid-blue-dark {
+    color: var(--tid-blue-dark);
+  }
+  
+  .text-tid-blue-light {
+    color: var(--tid-blue-light);
+  }
+  
+  .bg-tid-blue {
+    background-color: var(--tid-blue);
+  }
+  
+  .bg-tid-blue-dark {
+    background-color: var(--tid-blue-dark);
+  }
+  
+  .bg-tid-blue\/10 {
+    background-color: rgba(0, 136, 204, 0.1);
+  }
+  
+  .border-tid-blue {
+    border-color: var(--tid-blue);
+  }
+  
+  .hover\:bg-tid-blue-dark:hover {
+    background-color: var(--tid-blue-dark);
+  }
+  
+  .hover\:text-tid-blue:hover {
+    color: var(--tid-blue);
+  }
+  
+  .hover\:text-tid-blue-dark:hover {
+    color: var(--tid-blue-dark);
+  }
+  
+  .hover\:border-tid-blue:hover {
+    border-color: var(--tid-blue);
+  }
+  
+  .focus\:ring-tid-blue:focus {
+    --tw-ring-color: var(--tid-blue);
   }
   
   .text-tid-dark {
     color: var(--tid-dark);
   }
   
-  .text-tid-slate {
-    color: var(--tid-slate);
-  }
-  
   .text-tid-gray {
     color: var(--tid-gray);
-  }
-  
-  .bg-tid-red {
-    background-color: var(--tid-red);
-  }
-  
-  .bg-tid-red-light {
-    background-color: var(--tid-red-light);
   }
   
   .bg-tid-dark {
     background-color: var(--tid-dark);
   }
   
-  .bg-tid-slate {
-    background-color: var(--tid-slate);
-  }
-  
-  .bg-tid-gray {
-    background-color: var(--tid-gray);
-  }
-  
-  .border-tid-red {
-    border-color: var(--tid-red);
-  }
-  
-  .hover\:bg-tid-red-dark:hover {
-    background-color: hsl(0, 84%, 50%);
-  }
-  
-  .hover\:text-tid-red:hover {
-    color: var(--tid-red);
-  }
-  
-  .hover\:border-tid-red:hover {
-    border-color: var(--tid-red);
+  .bg-tid-black {
+    background-color: var(--tid-black);
   }
 }
