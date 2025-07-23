@@ -54,8 +54,8 @@ export default function CapabilitiesSection() {
                 key={index}
                 className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:bg-white dark:hover:bg-gray-700 border border-transparent hover:border-gray-200 dark:hover:border-gray-600"
               >
-                <div className="w-12 h-12 bg-tid-gray/10 dark:bg-tid-gray/20 rounded-lg flex items-center justify-center mb-6">
-                  <IconComponent className="text-tid-gray dark:text-tid-gray w-6 h-6" />
+                <div className="w-12 h-12 bg-tid-blue/10 rounded-lg flex items-center justify-center mb-6">
+                  <IconComponent className="text-tid-blue w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                   {capability.title}

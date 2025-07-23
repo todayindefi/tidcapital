@@ -55,12 +55,12 @@ export default function MethodologySection() {
                   Risk Analysis Framework
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 bg-tid-gray/10 dark:bg-tid-gray/20 rounded-lg">
-                    <div className="text-2xl font-bold text-tid-gray">4</div>
+                  <div className="p-4 bg-tid-blue/10 rounded-lg">
+                    <div className="text-2xl font-bold text-tid-blue">4</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Risk Dimensions</div>
                   </div>
-                  <div className="p-4 bg-tid-gray/10 dark:bg-tid-gray/20 rounded-lg">
-                    <div className="text-2xl font-bold text-tid-gray">10</div>
+                  <div className="p-4 bg-tid-blue/10 rounded-lg">
+                    <div className="text-2xl font-bold text-tid-blue">10</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Point Scale</div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function MethodologySection() {
           <div className="space-y-8">
             {riskCategories.map((category, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-tid-gray rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 bg-tid-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white font-semibold text-sm">{index + 1}</span>
                 </div>
                 <div>

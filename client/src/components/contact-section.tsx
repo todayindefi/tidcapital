@@ -94,7 +94,7 @@ export default function ContactSection() {
                       <FormControl>
                         <Input
                           placeholder="John Doe"
-                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all"
                           {...field}
                         />
                       </FormControl>
@@ -113,7 +113,7 @@ export default function ContactSection() {
                       <FormControl>
                         <Input
                           placeholder="Company Name"
-                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all"
                           value={field.value || ""}
                           onChange={field.onChange}
                           onBlur={field.onBlur}
@@ -140,7 +140,7 @@ export default function ContactSection() {
                         <Input
                           type="email"
                           placeholder="john@company.com"
-                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all"
                           {...field}
                         />
                       </FormControl>
@@ -158,7 +158,7 @@ export default function ContactSection() {
                       </FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                         <FormControl>
-                          <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all">
+                          <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all">
                             <SelectValue placeholder="Select inquiry type" />
                           </SelectTrigger>
                         </FormControl>
@@ -185,7 +185,7 @@ export default function ContactSection() {
                     </FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                       <FormControl>
-                        <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all">
+                        <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all">
                           <SelectValue placeholder="Select AUM Range" />
                         </SelectTrigger>
                       </FormControl>
@@ -215,7 +215,7 @@ export default function ContactSection() {
                       <Textarea
                         rows={4}
                         placeholder="Tell us about your specific needs and investment objectives..."
-                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all"
                         {...field}
                       />
                     </FormControl>
@@ -233,17 +233,17 @@ export default function ContactSection() {
                       <Checkbox
                         checked={field.value}
                         onCheckedChange={field.onChange}
-                        className="data-[state=checked]:bg-tid-black data-[state=checked]:border-tid-black"
+                        className="data-[state=checked]:bg-tid-blue data-[state=checked]:border-tid-blue"
                       />
                     </FormControl>
                     <div className="space-y-1 leading-none">
                       <FormLabel className="text-sm text-gray-600 dark:text-gray-300">
                         I agree to the{" "}
-                        <a href="#" className="text-tid-black hover:underline">
+                        <a href="#" className="text-tid-blue hover:underline">
                           Terms of Service
                         </a>{" "}
                         and{" "}
-                        <a href="#" className="text-tid-black hover:underline">
+                        <a href="#" className="text-tid-blue hover:underline">
                           Privacy Policy
                         </a>
                       </FormLabel>
@@ -256,7 +256,7 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-tid-black hover:bg-tid-black-dark text-white py-4 rounded-lg font-semibold transition-all transform hover:scale-105 disabled:transform-none disabled:opacity-50"
+                className="w-full bg-tid-blue hover:bg-tid-blue-dark text-white py-4 rounded-lg font-semibold transition-all transform hover:scale-105 disabled:transform-none disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
@@ -269,7 +269,7 @@ export default function ContactSection() {
               href="https://x.com/tidcapital" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center text-tid-black hover:text-tid-gray dark:text-tid-black dark:hover:text-tid-gray font-semibold transition-colors"
+              className="inline-flex items-center text-tid-blue hover:text-tid-blue-dark font-semibold transition-colors"
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>

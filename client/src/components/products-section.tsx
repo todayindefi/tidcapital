@@ -29,8 +29,8 @@ export default function ProductsSection() {
             <Badge className="absolute top-4 right-4 bg-tid-black text-white">
               Coming Soon
             </Badge>
-            <div className="w-16 h-16 bg-tid-gray/20 dark:bg-tid-gray/30 rounded-xl flex items-center justify-center mb-6">
-              <Coins className="text-tid-gray dark:text-tid-gray w-8 h-8" />
+            <div className="w-16 h-16 bg-tid-blue/10 rounded-xl flex items-center justify-center mb-6">
+              <Coins className="text-tid-blue w-8 h-8" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Stablecoin Yield Vaults
@@ -58,8 +58,8 @@ export default function ProductsSection() {
             <Badge className="absolute top-4 right-4 bg-tid-black text-white">
               Coming Soon
             </Badge>
-            <div className="w-16 h-16 bg-tid-gray/20 dark:bg-tid-gray/30 rounded-xl flex items-center justify-center mb-6">
-              <SiEthereum className="text-tid-gray dark:text-tid-gray text-2xl" />
+            <div className="w-16 h-16 bg-tid-blue/10 rounded-xl flex items-center justify-center mb-6">
+              <SiEthereum className="text-tid-blue text-2xl" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               ETH Yield Farming Vaults
@@ -87,7 +87,7 @@ export default function ProductsSection() {
         <div className="text-center">
           <Button
             onClick={scrollToContact}
-            className="bg-tid-black hover:bg-tid-black-dark text-white px-8 py-4 text-lg h-auto"
+            className="bg-tid-blue hover:bg-tid-blue-dark text-white px-8 py-4 text-lg h-auto"
           >
             Request Early Access
           </Button>
