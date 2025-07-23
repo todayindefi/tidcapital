@@ -8,19 +8,19 @@ export default function CapabilitiesSection() {
       description: "Advanced DeFi yield farming strategies developed through proprietary quantitative models and market analysis, optimized for institutional returns."
     },
     {
-      icon: Zap,
-      title: "Algorithmic Trading",
-      description: "24/7 automated trading systems that capitalize on arbitrage opportunities, yield differentials, and market inefficiencies across DeFi protocols."
+      icon: BarChart3,
+      title: "Automated Monitoring Systems",
+      description: "Advanced risk monitoring and automated data gathering systems for tracking farm performance, risk metrics, and protocol stability."
     },
     {
       icon: Shield,
-      title: "Enterprise Risk Management",
-      description: "Institutional-grade risk controls including position sizing, drawdown limits, smart contract auditing, and comprehensive portfolio hedging."
+      title: "Comprehensive Risk Management",
+      description: "Advanced risk assessment covering asset risk, protocol risk, APY risk, and peg risk, using tranching and diversification strategies."
     },
     {
       icon: Search,
-      title: "Research & Intelligence",
-      description: "Deep protocol analysis backed by Today in DeFi research network, combining on-chain data with fundamental analysis for alpha generation."
+      title: "DeFi Research & Intelligence",
+      description: "Understanding and analyzing DeFi protocols, yield opportunities, points programs, and risk-adjusted yield backed by Today in DeFi news flow."
     },
     {
       icon: Target,
@@ -28,9 +28,9 @@ export default function CapabilitiesSection() {
       description: "Selective curation of third-party vaults and strategies that meet our strict risk-adjusted return criteria and institutional standards."
     },
     {
-      icon: BarChart3,
-      title: "Performance Optimization",
-      description: "Continuous monitoring and algorithmic rebalancing to maximize returns while maintaining target risk parameters across all strategies."
+      icon: Zap,
+      title: "Market Intelligence",
+      description: "Real-time news flow keeping us on top of the latest farms, airdrops, and yield generating protocols for optimal opportunity capture."
     }
   ];
 
@@ -54,8 +54,8 @@ export default function CapabilitiesSection() {
                 key={index}
                 className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:bg-white dark:hover:bg-gray-700 border border-transparent hover:border-gray-200 dark:hover:border-gray-600"
               >
-                <div className="w-12 h-12 bg-tid-black/10 dark:bg-tid-black/20 rounded-lg flex items-center justify-center mb-6">
-                  <IconComponent className="text-tid-black dark:text-tid-black w-6 h-6" />
+                <div className="w-12 h-12 bg-tid-gray/10 dark:bg-tid-gray/20 rounded-lg flex items-center justify-center mb-6">
+                  <IconComponent className="text-tid-gray dark:text-tid-gray w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                   {capability.title}

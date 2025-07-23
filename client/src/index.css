@@ -28,9 +28,9 @@
   --tid-black: hsl(0, 0%, 8%);
   --tid-dark: hsl(0, 0%, 15%);
   --tid-slate: hsl(0, 0%, 25%);
-  --tid-gray: hsl(0, 0%, 45%);
-  --tid-light-gray: hsl(0, 0%, 65%);
-  --tid-accent: hsl(0, 0%, 20%);
+  --tid-gray: hsl(210, 6%, 45%);
+  --tid-light-gray: hsl(210, 8%, 65%);
+  --tid-accent: hsl(210, 10%, 20%);
 }
 
 .dark {
@@ -59,9 +59,9 @@
   --tid-black: hsl(0, 0%, 92%);
   --tid-dark: hsl(0, 0%, 85%);
   --tid-slate: hsl(0, 0%, 75%);
-  --tid-gray: hsl(0, 0%, 55%);
-  --tid-light-gray: hsl(0, 0%, 35%);
-  --tid-accent: hsl(0, 0%, 80%);
+  --tid-gray: hsl(210, 6%, 55%);
+  --tid-light-gray: hsl(210, 8%, 35%);
+  --tid-accent: hsl(210, 10%, 80%);
 }
 
 @layer base {
