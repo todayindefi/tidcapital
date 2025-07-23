@@ -36,8 +36,8 @@ export default function ResearchSection() {
                 const IconComponent = feature.icon;
                 return (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-tid-gray/10 dark:bg-tid-gray/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <IconComponent className="text-tid-gray w-4 h-4" />
+                    <div className="w-8 h-8 bg-tid-blue/10 dark:bg-tid-blue/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <IconComponent className="text-tid-blue w-4 h-4" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
@@ -81,19 +81,19 @@ export default function ResearchSection() {
               </h3>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-gray">200+</div>
+                  <div className="text-2xl font-bold text-tid-blue">200+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Research Reports</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-gray">300+</div>
+                  <div className="text-2xl font-bold text-tid-blue">300+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Protocols Analyzed</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-gray">17K+</div>
+                  <div className="text-2xl font-bold text-tid-blue">17K+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Community Members</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-gray">12-20%</div>
+                  <div className="text-2xl font-bold text-tid-blue">12-20%</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Stable APY</div>
                 </div>
               </div>
