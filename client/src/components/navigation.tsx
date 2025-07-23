@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
-import tidCapitalLogo from "@assets/TID CAPITAL (2)_1751466284297.png";
+import tidCapitalLogo from "@assets/TID Capital _1753260487995.png";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +37,7 @@ export default function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-gray-700 dark:text-gray-300 hover:text-tid-red dark:hover:text-tid-red transition-colors text-sm font-medium"
+                  className="text-gray-700 dark:text-gray-300 hover:text-tid-black dark:hover:text-tid-black transition-colors text-sm font-medium"
                 >
                   {item.label}
                 </button>
@@ -48,7 +48,7 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center space-x-4 text-xs">
               <a
                 href="https://todayindefi.com"
-                className="text-gray-500 dark:text-gray-400 hover:text-tid-red transition-colors"
+                className="text-gray-500 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +57,7 @@ export default function Navigation() {
               <span className="text-gray-300 dark:text-gray-600">|</span>
               <a
                 href="https://tidresearch.com"
-                className="text-gray-500 dark:text-gray-400 hover:text-tid-red transition-colors"
+                className="text-gray-500 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +78,7 @@ export default function Navigation() {
             </Button>
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-tid-red hover:bg-tid-red-dark text-white text-sm px-4 py-2 hidden sm:inline-flex"
+              className="bg-tid-black hover:bg-tid-dark text-white text-sm px-4 py-2 hidden sm:inline-flex"
             >
               Contact
             </Button>
@@ -94,7 +94,7 @@ export default function Navigation() {
                     <button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className="text-left text-lg text-gray-700 dark:text-gray-300 hover:text-tid-red dark:hover:text-tid-red transition-colors"
+                      className="text-left text-lg text-gray-700 dark:text-gray-300 hover:text-tid-black dark:hover:text-tid-black transition-colors"
                     >
                       {item.label}
                     </button>
@@ -102,7 +102,7 @@ export default function Navigation() {
                   <div className="border-t pt-6 space-y-4">
                     <a
                       href="https://todayindefi.com"
-                      className="block text-gray-600 dark:text-gray-400 hover:text-tid-red dark:hover:text-tid-red transition-colors"
+                      className="block text-gray-600 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -110,7 +110,7 @@ export default function Navigation() {
                     </a>
                     <a
                       href="https://tidresearch.com"
-                      className="block text-gray-600 dark:text-gray-400 hover:text-tid-red dark:hover:text-tid-red transition-colors"
+                      className="block text-gray-600 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -118,7 +118,7 @@ export default function Navigation() {
                     </a>
                     <Button
                       onClick={() => scrollToSection("contact")}
-                      className="w-full bg-tid-red hover:bg-tid-red-dark text-white"
+                      className="w-full bg-tid-black hover:bg-tid-black-dark text-white"
                     >
                       Contact Us
                     </Button>

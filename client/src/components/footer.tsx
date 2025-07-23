@@ -1,26 +1,26 @@
 import { AlertTriangle, Twitter } from "lucide-react";
 import { SiLinkedin, SiTelegram } from "react-icons/si";
-import tidCapitalLogo from "@assets/TID CAPITAL (2)_1751466284297.png";
+import tidCapitalLogo from "@assets/TID Capital Light_1753261609086.png";
 
 export default function Footer() {
   return (
     <footer className="bg-tid-dark text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div>
-            <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4 filter brightness-0 invert" />
+            <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Research-driven yield farming strategies for institutional and sophisticated investors in DeFi markets.
+              Professional DeFi yield farming and proprietary trading strategies for institutional and sophisticated investors seeking superior risk-adjusted returns.
             </p>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
+              <li><a href="#capabilities" className="hover:text-white transition-colors">Yield Farming</a></li>
+              <li><a href="#capabilities" className="hover:text-white transition-colors">Proprietary Trading</a></li>
               <li><a href="#capabilities" className="hover:text-white transition-colors">Vault Curation</a></li>
-              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Assessment</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Strategy Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Portfolio Management</a></li>
+              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Management</a></li>
             </ul>
           </div>
           
@@ -47,30 +47,11 @@ export default function Footer() {
                   TID Research
                 </a>
               </li>
-              <li><a href="#research" className="hover:text-white transition-colors">Market Analysis</a></li>
-              <li><a href="#research" className="hover:text-white transition-colors">Protocol Reports</a></li>
+
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>partnerships@tidcapital.com</li>
-              <li>research@tidcapital.com</li>
-              <li>support@tidcapital.com</li>
-            </ul>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <SiLinkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <SiTelegram className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
+
         </div>
         
         <div className="border-t border-gray-700 pt-8">
@@ -94,7 +75,7 @@ export default function Footer() {
           
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div>
-              © 2024 TID Capital. All rights reserved.
+              © 2025 TID Capital. All rights reserved.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
