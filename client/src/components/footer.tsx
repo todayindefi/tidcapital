@@ -47,17 +47,15 @@ export default function Footer() {
                   TID Research
                 </a>
               </li>
-              <li><a href="#research" className="hover:text-white transition-colors">Market Analysis</a></li>
-              <li><a href="#research" className="hover:text-white transition-colors">Protocol Reports</a></li>
+
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>partnerships@tidcapital.com</li>
-              <li>research@tidcapital.com</li>
-              <li>support@tidcapital.com</li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contact Form</a></li>
+              <li>info@todayindefi.com</li>
             </ul>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -94,7 +92,7 @@ export default function Footer() {
           
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div>
-              © 2024 TID Capital. All rights reserved.
+              © 2025 TID Capital. All rights reserved.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

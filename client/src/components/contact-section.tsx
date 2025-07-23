@@ -45,7 +45,7 @@ export default function ContactSection() {
     onSuccess: () => {
       toast({
         title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
+        description: "Your inquiry has been sent to info@todayindefi.com. We'll get back to you within 24 hours.",
       });
       form.reset();
     },
@@ -262,6 +262,21 @@ export default function ContactSection() {
               </Button>
             </form>
           </Form>
+          
+          <div className="text-center mt-6">
+            <p className="text-gray-600 dark:text-gray-300 mb-4">Follow us on social media</p>
+            <a 
+              href="https://x.com/tidcapital" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-tid-black hover:text-tid-gray dark:text-tid-black dark:hover:text-tid-gray font-semibold transition-colors"
+            >
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              @tidcapital
+            </a>
+          </div>
         </div>
       </div>
     </section>
