@@ -13,7 +13,7 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(0, 84%, 60%);
+  --primary: hsl(0, 0%, 8%);
   --primary-foreground: hsl(0, 0%, 98%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -24,12 +24,13 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* TID Capital brand colors */
-  --tid-red: hsl(0, 84%, 60%);
-  --tid-red-light: hsl(0, 84%, 70%);
-  --tid-dark: hsl(217, 32%, 17%);
-  --tid-slate: hsl(215, 25%, 27%);
-  --tid-gray: hsl(215, 20%, 65%);
+  /* TID Capital monochrome brand colors */
+  --tid-black: hsl(0, 0%, 8%);
+  --tid-dark: hsl(0, 0%, 15%);
+  --tid-slate: hsl(0, 0%, 25%);
+  --tid-gray: hsl(0, 0%, 45%);
+  --tid-light-gray: hsl(0, 0%, 65%);
+  --tid-accent: hsl(0, 0%, 20%);
 }
 
 .dark {
@@ -43,8 +44,8 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(0, 84%, 60%);
-  --primary-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(0, 0%, 92%);
+  --primary-foreground: hsl(0, 0%, 8%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
   --accent: hsl(240, 3.7%, 15.9%);
@@ -54,12 +55,13 @@
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
   
-  /* TID Capital brand colors for dark mode */
-  --tid-red: hsl(0, 84%, 65%);
-  --tid-red-light: hsl(0, 84%, 75%);
-  --tid-dark: hsl(217, 32%, 15%);
-  --tid-slate: hsl(215, 25%, 25%);
-  --tid-gray: hsl(215, 20%, 70%);
+  /* TID Capital monochrome brand colors for dark mode */
+  --tid-black: hsl(0, 0%, 92%);
+  --tid-dark: hsl(0, 0%, 85%);
+  --tid-slate: hsl(0, 0%, 75%);
+  --tid-gray: hsl(0, 0%, 55%);
+  --tid-light-gray: hsl(0, 0%, 35%);
+  --tid-accent: hsl(0, 0%, 80%);
 }
 
 @layer base {

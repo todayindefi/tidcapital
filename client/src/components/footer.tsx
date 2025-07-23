@@ -1,6 +1,6 @@
 import { AlertTriangle, Twitter } from "lucide-react";
 import { SiLinkedin, SiTelegram } from "react-icons/si";
-import tidCapitalLogo from "@assets/TID CAPITAL (2)_1751466284297.png";
+import tidCapitalLogo from "@assets/TID Capital _1753260487995.png";
 
 export default function Footer() {
   return (
@@ -8,19 +8,19 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4 filter brightness-0 invert" />
+            <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Research-driven yield farming strategies for institutional and sophisticated investors in DeFi markets.
+              Professional DeFi yield farming and proprietary trading strategies for institutional and sophisticated investors seeking superior risk-adjusted returns.
             </p>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
+              <li><a href="#capabilities" className="hover:text-white transition-colors">Yield Farming</a></li>
+              <li><a href="#capabilities" className="hover:text-white transition-colors">Proprietary Trading</a></li>
               <li><a href="#capabilities" className="hover:text-white transition-colors">Vault Curation</a></li>
-              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Assessment</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Strategy Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Portfolio Management</a></li>
+              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Management</a></li>
             </ul>
           </div>
           

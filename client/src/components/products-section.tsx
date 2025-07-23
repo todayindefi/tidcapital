@@ -26,7 +26,7 @@ export default function ProductsSection() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-600 rounded-2xl p-8 relative overflow-hidden">
-            <Badge className="absolute top-4 right-4 bg-tid-red text-white">
+            <Badge className="absolute top-4 right-4 bg-tid-black text-white">
               Coming Soon
             </Badge>
             <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center mb-6">
@@ -55,7 +55,7 @@ export default function ProductsSection() {
           </div>
 
           <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-600 rounded-2xl p-8 relative overflow-hidden">
-            <Badge className="absolute top-4 right-4 bg-tid-red text-white">
+            <Badge className="absolute top-4 right-4 bg-tid-black text-white">
               Coming Soon
             </Badge>
             <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-xl flex items-center justify-center mb-6">
@@ -87,7 +87,7 @@ export default function ProductsSection() {
         <div className="text-center">
           <Button
             onClick={scrollToContact}
-            className="bg-tid-red hover:bg-tid-red-dark text-white px-8 py-4 text-lg h-auto"
+            className="bg-tid-black hover:bg-tid-black-dark text-white px-8 py-4 text-lg h-auto"
           >
             Request Early Access
           </Button>

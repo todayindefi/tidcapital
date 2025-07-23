@@ -119,7 +119,20 @@ TID Capital is a research-driven DeFi yield farming platform that provides insti
 ## Changelog
 - July 02, 2025. Initial setup
 - July 02, 2025. Fixed deployment configuration issues - server ready for production
+- January 23, 2025. Updated to monochrome design with new TID Capital logo and monogram
+- January 23, 2025. Refocused content from vault curation to proprietary yield farming and trading
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+### Design Preferences
+- Monochrome color scheme (black, grays, white) - updated January 23, 2025
+- New TID Capital logo: `TID Capital _1753260487995.png` (main logo)
+- Monogram for favicon: `TID Capital Monogram_1753260491810.png`
+
+### Content Focus
+- Primary focus: Professional DeFi yield farming and proprietary trading
+- Secondary: Vault curation (mentioned but not primary focus)
+- Target audience: Institutional and sophisticated investors
+- Emphasize research-driven strategies and risk management

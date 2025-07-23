@@ -75,7 +75,7 @@ export default function ContactSection() {
             Partner With TID Capital
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Get in touch to discuss institutional partnerships, early access to vault products, or custom yield farming strategies.
+            Get in touch to discuss institutional partnerships, proprietary trading strategies, or custom DeFi yield farming solutions.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function ContactSection() {
                       <FormControl>
                         <Input
                           placeholder="John Doe"
-                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
                           {...field}
                         />
                       </FormControl>
@@ -113,7 +113,7 @@ export default function ContactSection() {
                       <FormControl>
                         <Input
                           placeholder="Company Name"
-                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
                           value={field.value || ""}
                           onChange={field.onChange}
                           onBlur={field.onBlur}
@@ -140,7 +140,7 @@ export default function ContactSection() {
                         <Input
                           type="email"
                           placeholder="john@company.com"
-                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all"
+                          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
                           {...field}
                         />
                       </FormControl>
@@ -158,7 +158,7 @@ export default function ContactSection() {
                       </FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                         <FormControl>
-                          <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all">
+                          <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all">
                             <SelectValue placeholder="Select inquiry type" />
                           </SelectTrigger>
                         </FormControl>
@@ -185,7 +185,7 @@ export default function ContactSection() {
                     </FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
                       <FormControl>
-                        <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all">
+                        <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all">
                           <SelectValue placeholder="Select AUM Range" />
                         </SelectTrigger>
                       </FormControl>
@@ -215,7 +215,7 @@ export default function ContactSection() {
                       <Textarea
                         rows={4}
                         placeholder="Tell us about your specific needs and investment objectives..."
-                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-red focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-black focus:border-transparent transition-all"
                         {...field}
                       />
                     </FormControl>
@@ -233,17 +233,17 @@ export default function ContactSection() {
                       <Checkbox
                         checked={field.value}
                         onCheckedChange={field.onChange}
-                        className="data-[state=checked]:bg-tid-red data-[state=checked]:border-tid-red"
+                        className="data-[state=checked]:bg-tid-black data-[state=checked]:border-tid-black"
                       />
                     </FormControl>
                     <div className="space-y-1 leading-none">
                       <FormLabel className="text-sm text-gray-600 dark:text-gray-300">
                         I agree to the{" "}
-                        <a href="#" className="text-tid-red hover:underline">
+                        <a href="#" className="text-tid-black hover:underline">
                           Terms of Service
                         </a>{" "}
                         and{" "}
-                        <a href="#" className="text-tid-red hover:underline">
+                        <a href="#" className="text-tid-black hover:underline">
                           Privacy Policy
                         </a>
                       </FormLabel>
@@ -256,7 +256,7 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-tid-red hover:bg-tid-red-dark text-white py-4 rounded-lg font-semibold transition-all transform hover:scale-105 disabled:transform-none disabled:opacity-50"
+                className="w-full bg-tid-black hover:bg-tid-black-dark text-white py-4 rounded-lg font-semibold transition-all transform hover:scale-105 disabled:transform-none disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>

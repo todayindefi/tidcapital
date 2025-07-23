@@ -25,7 +25,7 @@ export default function ResearchSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Powered by <span className="text-tid-red">Today in DeFi</span> Research
+              Powered by <span className="text-tid-black">Today in DeFi</span> Research
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               TID Capital strategies are built on the foundation of comprehensive DeFi research from Today in DeFi, combining market intelligence, protocol analysis, and community insights.
@@ -36,8 +36,8 @@ export default function ResearchSection() {
                 const IconComponent = feature.icon;
                 return (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-tid-red/10 dark:bg-tid-red/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <IconComponent className="text-tid-red w-4 h-4" />
+                    <div className="w-8 h-8 bg-tid-black/10 dark:bg-tid-black/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                      <IconComponent className="text-tid-black w-4 h-4" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
@@ -57,7 +57,7 @@ export default function ResearchSection() {
                 href="https://todayindefi.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-tid-red hover:text-red-700 dark:hover:text-red-400 font-semibold transition-colors"
+                className="inline-flex items-center text-tid-black hover:text-red-700 dark:hover:text-red-400 font-semibold transition-colors"
               >
                 Visit Today in DeFi 
                 <ExternalLink className="ml-2 w-4 h-4" />
@@ -66,7 +66,7 @@ export default function ResearchSection() {
                 href="https://tidresearch.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-tid-red hover:text-red-700 dark:hover:text-red-400 font-semibold transition-colors"
+                className="inline-flex items-center text-tid-black hover:text-red-700 dark:hover:text-red-400 font-semibold transition-colors"
               >
                 TID Research Portal 
                 <ExternalLink className="ml-2 w-4 h-4" />
@@ -81,19 +81,19 @@ export default function ResearchSection() {
               </h3>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-red">200+</div>
+                  <div className="text-2xl font-bold text-tid-black">200+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Research Reports</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-red">300+</div>
+                  <div className="text-2xl font-bold text-tid-black">300+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Protocols Analyzed</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-red">17K+</div>
+                  <div className="text-2xl font-bold text-tid-black">17K+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Community Members</div>
                 </div>
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-red">24/7</div>
+                  <div className="text-2xl font-bold text-tid-black">24/7</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Market Monitoring</div>
                 </div>
               </div>
