@@ -1,6 +1,6 @@
 import { AlertTriangle, Twitter } from "lucide-react";
 import { SiLinkedin, SiTelegram } from "react-icons/si";
-import tidCapitalLogo from "@assets/TID Capital _1753260487995.png";
+import tidCapitalLogo from "@assets/TID Capital Light_1753261609086.png";
 
 export default function Footer() {
   return (
