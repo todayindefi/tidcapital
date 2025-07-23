@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-tid-dark text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div>
             <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -51,24 +51,7 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact Form</a></li>
-              <li>info@todayindefi.com</li>
-            </ul>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <SiLinkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <SiTelegram className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
+
         </div>
         
         <div className="border-t border-gray-700 pt-8">
