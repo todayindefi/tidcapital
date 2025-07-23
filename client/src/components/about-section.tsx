@@ -38,7 +38,7 @@ export default function AboutSection() {
             const IconComponent = feature.icon;
             return (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-tid-blue/10 dark:bg-tid-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-tid-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="text-tid-blue w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">

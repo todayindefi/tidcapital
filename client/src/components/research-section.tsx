@@ -36,7 +36,7 @@ export default function ResearchSection() {
                 const IconComponent = feature.icon;
                 return (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-tid-blue/10 dark:bg-tid-blue/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-tid-blue/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                       <IconComponent className="text-tid-blue w-4 h-4" />
                     </div>
                     <div>

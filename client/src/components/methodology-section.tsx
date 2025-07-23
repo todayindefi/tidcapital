@@ -55,11 +55,11 @@ export default function MethodologySection() {
                   Risk Analysis Framework
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 bg-tid-blue/10 dark:bg-tid-blue/20 rounded-lg">
+                  <div className="p-4 bg-tid-blue/10 rounded-lg">
                     <div className="text-2xl font-bold text-tid-blue">4</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Risk Dimensions</div>
                   </div>
-                  <div className="p-4 bg-tid-blue/10 dark:bg-tid-blue/20 rounded-lg">
+                  <div className="p-4 bg-tid-blue/10 rounded-lg">
                     <div className="text-2xl font-bold text-tid-blue">10</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Point Scale</div>
                   </div>

@@ -29,8 +29,8 @@ export default function ProductsSection() {
             <Badge className="absolute top-4 right-4 bg-tid-black text-white">
               Coming Soon
             </Badge>
-            <div className="w-16 h-16 bg-tid-blue/20 dark:bg-tid-blue/30 rounded-xl flex items-center justify-center mb-6">
-              <Coins className="text-tid-blue dark:text-tid-blue w-8 h-8" />
+            <div className="w-16 h-16 bg-tid-blue/10 rounded-xl flex items-center justify-center mb-6">
+              <Coins className="text-tid-blue w-8 h-8" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Stablecoin Yield Vaults
@@ -58,8 +58,8 @@ export default function ProductsSection() {
             <Badge className="absolute top-4 right-4 bg-tid-black text-white">
               Coming Soon
             </Badge>
-            <div className="w-16 h-16 bg-tid-blue/20 dark:bg-tid-blue/30 rounded-xl flex items-center justify-center mb-6">
-              <SiEthereum className="text-tid-blue dark:text-tid-blue text-2xl" />
+            <div className="w-16 h-16 bg-tid-blue/10 rounded-xl flex items-center justify-center mb-6">
+              <SiEthereum className="text-tid-blue text-2xl" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               ETH Yield Farming Vaults
