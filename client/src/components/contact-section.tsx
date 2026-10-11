@@ -14,6 +14,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { insertContactInquirySchema } from "@shared/schema";
 
 const formSchema = insertContactInquirySchema.extend({
+  website: z.string().optional(),
   terms: z.boolean().refine(val => val === true, {
     message: "You must agree to the terms and conditions"
   })
@@ -82,6 +83,15 @@ export default function ContactSection() {
         <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              {/* honeypot for spam bots; hidden from real users */}
+              <input
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="hidden"
+                {...form.register("website")}
+              />
               <div className="grid md:grid-cols-2 gap-6">
                 <FormField
                   control={form.control}
