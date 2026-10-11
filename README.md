@@ -39,7 +39,7 @@ The SMTP app password is not kept in `.env` in production. It lives in a root-on
 
 ```
 sudo install -d -m 700 /etc/credstore
-sudo sh -c 'umask 077; read -rs -p "App password: " p; echo; printf %s "$p" > /etc/credstore/tidcapital-smtp-pass'
+sudo bash -c 'umask 077; read -rs -p "App password: " p; echo; printf %s "$p" > /etc/credstore/tidcapital-smtp-pass'
 sudo systemctl restart tidcapital
 ```
 
