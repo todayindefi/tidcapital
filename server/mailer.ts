@@ -9,7 +9,8 @@ function smtpPassword(): string | undefined {
   const dir = process.env.CREDENTIALS_DIRECTORY;
   if (dir) {
     const file = path.join(dir, "smtp_pass");
-    if (fs.existsSync(file)) return fs.readFileSync(file, "utf-8").trim();
+    // Google shows app passwords in groups of 4; spaces are not part of it
+    if (fs.existsSync(file)) return fs.readFileSync(file, "utf-8").replace(/\s+/g, "");
   }
   return process.env.SMTP_PASS;
 }
