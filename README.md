@@ -20,15 +20,18 @@ sudo cp deploy/tidcapital.service /etc/systemd/system/
 sudo systemctl daemon-reload && sudo systemctl enable --now tidcapital
 ```
 
-Then add the hostname to `~/.cloudflared/config.yml` (above the 404 catch-all), route DNS, and restart the tunnel:
+The domain is tid.capital (registered at Squarespace, DNS on Cloudflare; email is Google Workspace, so keep the MX/TXT records). Add the hostnames to `~/.cloudflared/config.yml` (above the 404 catch-all), route DNS, and restart the tunnel:
 
 ```
-  - hostname: tidcapital.com
+  - hostname: tid.capital
+    service: http://localhost:8510
+  - hostname: www.tid.capital
     service: http://localhost:8510
 ```
 
 ```
-cloudflared tunnel route dns lending-dashboard tidcapital.com
+cloudflared tunnel route dns lending-dashboard tid.capital
+cloudflared tunnel route dns lending-dashboard www.tid.capital
 sudo systemctl restart cloudflare-tunnel
 ```
 
