@@ -35,6 +35,14 @@ cloudflared tunnel route dns lending-dashboard www.tid.capital
 sudo systemctl restart cloudflare-tunnel
 ```
 
+The SMTP app password is not kept in `.env` in production. It lives in a root-only file passed to the service with systemd `LoadCredential`:
+
+```
+sudo install -d -m 700 /etc/credstore
+sudo sh -c 'umask 077; read -rs -p "App password: " p; echo; printf %s "$p" > /etc/credstore/tidcapital-smtp-pass'
+sudo systemctl restart tidcapital
+```
+
 To ship changes: `git pull && npm ci && npm run build && sudo systemctl restart tidcapital`.
 
 ## Brand notes

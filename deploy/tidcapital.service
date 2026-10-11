@@ -9,6 +9,8 @@ User=danger
 WorkingDirectory=/home/danger/tidcapital
 EnvironmentFile=/home/danger/tidcapital/.env
 Environment=NODE_ENV=production
+# SMTP app password, root-only file outside the repo
+LoadCredential=smtp_pass:/etc/credstore/tidcapital-smtp-pass
 ExecStart=/home/danger/.nvm/versions/node/v22.22.3/bin/node dist/index.js
 Restart=always
 RestartSec=5
