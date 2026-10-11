@@ -1,0 +1,44 @@
+# TID Capital website
+
+Marketing site for TID Capital: a React (Vite + Tailwind/shadcn) single page served by a small Express server. The only backend feature is the contact form, which emails submissions to `CONTACT_TO` over SMTP.
+
+## Develop
+
+```
+npm install
+cp .env.example .env   # fill in SMTP settings
+npm run dev            # http://localhost:5000 (or $PORT)
+```
+
+## Deploy (self-hosted)
+
+Runs on the home server as a systemd service behind the existing Cloudflare tunnel.
+
+```
+npm ci && npm run build
+sudo bash deploy/install.sh   # installs the service, asks for the SMTP password the first time
+```
+
+The domain is tid.capital (registered at Squarespace, DNS on Cloudflare; email is Google Workspace, so keep the MX/TXT records). Add the hostnames to `~/.cloudflared/config.yml` (above the 404 catch-all), route DNS, and restart the tunnel:
+
+```
+  - hostname: tid.capital
+    service: http://localhost:8510
+  - hostname: www.tid.capital
+    service: http://localhost:8510
+```
+
+```
+cloudflared tunnel route dns lending-dashboard tid.capital
+cloudflared tunnel route dns lending-dashboard www.tid.capital
+sudo systemctl restart cloudflare-tunnel
+```
+
+The SMTP app password is not kept in `.env` in production. It lives in a root-only file (`/etc/credstore/tidcapital-smtp-pass`) passed to the service with systemd `LoadCredential`. To change it: `sudo bash deploy/install.sh --new-password`.
+
+To ship changes: `git pull && npm ci && npm run build && sudo bash deploy/install.sh`.
+
+## Brand notes
+
+- Blue color scheme matching the logo set in `attached_assets/` (white-bg logo in nav, black-bg logo in footer, monogram as favicon).
+- Focus: research-driven DeFi yield farming and proprietary trading for institutional and sophisticated investors; vault curation is secondary.
