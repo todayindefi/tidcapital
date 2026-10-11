@@ -16,8 +16,7 @@ Runs on the home server as a systemd service behind the existing Cloudflare tunn
 
 ```
 npm ci && npm run build
-sudo cp deploy/tidcapital.service /etc/systemd/system/
-sudo systemctl daemon-reload && sudo systemctl enable --now tidcapital
+sudo bash deploy/install.sh   # installs the service, asks for the SMTP password the first time
 ```
 
 The domain is tid.capital (registered at Squarespace, DNS on Cloudflare; email is Google Workspace, so keep the MX/TXT records). Add the hostnames to `~/.cloudflared/config.yml` (above the 404 catch-all), route DNS, and restart the tunnel:
@@ -35,15 +34,9 @@ cloudflared tunnel route dns lending-dashboard www.tid.capital
 sudo systemctl restart cloudflare-tunnel
 ```
 
-The SMTP app password is not kept in `.env` in production. It lives in a root-only file passed to the service with systemd `LoadCredential`:
+The SMTP app password is not kept in `.env` in production. It lives in a root-only file (`/etc/credstore/tidcapital-smtp-pass`) passed to the service with systemd `LoadCredential`. To change it: `sudo bash deploy/install.sh --new-password`.
 
-```
-sudo install -d -m 700 /etc/credstore
-sudo bash -c 'umask 077; read -rs -p "App password: " p; echo; printf %s "$p" > /etc/credstore/tidcapital-smtp-pass'
-sudo systemctl restart tidcapital
-```
-
-To ship changes: `git pull && npm ci && npm run build && sudo systemctl restart tidcapital`.
+To ship changes: `git pull && npm ci && npm run build && sudo bash deploy/install.sh`.
 
 ## Brand notes
 
