@@ -24,14 +24,14 @@ export default function HeroSection() {
               Farming
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              TID Capital specializes in proprietary DeFi yield farming and trading strategies. We deploy institutional-grade risk management and quantitative research to maximize returns while minimizing downside risk across market cycles.
+              TID Capital focuses on proprietary DeFi yield strategies, onchain lending markets, and non-custodial vault curation. Our approach combines protocol research, collateral analysis, portfolio monitoring, and active risk assessment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-tid-blue hover:bg-tid-blue-dark text-white px-8 py-4 text-lg h-auto"
               >
-                Get Started
+                Contact Us
               </Button>
               <Button
                 variant="outline"
@@ -59,12 +59,12 @@ export default function HeroSection() {
                 <div className="text-lg text-gray-600 dark:text-gray-300">Active Strategies</div>
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
                   <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-2xl font-bold text-tid-blue">12-20%</div>
-                    <div className="text-gray-600 dark:text-gray-300">Stable APY</div>
+                    <div className="text-lg font-bold text-tid-blue">Proprietary</div>
+                    <div className="text-gray-600 dark:text-gray-300">Capital Deployment</div>
                   </div>
                   <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-2xl font-bold text-tid-blue">24/7</div>
-                    <div className="text-gray-600 dark:text-gray-300">Risk Monitoring</div>
+                    <div className="text-lg font-bold text-tid-blue">Automated</div>
+                    <div className="text-gray-600 dark:text-gray-300">Onchain Monitoring</div>
                   </div>
                 </div>
               </div>

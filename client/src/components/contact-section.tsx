@@ -73,10 +73,10 @@ export default function ContactSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Partner With TID Capital
+            Contact TID Capital
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Get in touch to discuss institutional partnerships, proprietary trading strategies, or custom DeFi yield farming solutions.
+            Questions about our research, our vaults, protocol partnerships, or anything else.
           </p>
         </div>
 
@@ -173,10 +173,10 @@ export default function ContactSection() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="partnership">Partnership Inquiry</SelectItem>
-                          <SelectItem value="early-access">Early Access Request</SelectItem>
-                          <SelectItem value="custom-strategy">Custom Strategy Development</SelectItem>
-                          <SelectItem value="general">General Information</SelectItem>
+                          <SelectItem value="research">Research</SelectItem>
+                          <SelectItem value="vault-information">Vault Information</SelectItem>
+                          <SelectItem value="protocol-partnership">Protocol Partnership</SelectItem>
+                          <SelectItem value="general">General Inquiry</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -185,33 +185,6 @@ export default function ContactSection() {
                 />
               </div>
 
-              <FormField
-                control={form.control}
-                name="aum"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                      Assets Under Management (Optional)
-                    </FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value || undefined}>
-                      <FormControl>
-                        <SelectTrigger className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all">
-                          <SelectValue placeholder="Select AUM Range" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="under-100k">{"<$100K"}</SelectItem>
-                        <SelectItem value="100k-500k">$100K - $500K</SelectItem>
-                        <SelectItem value="500k-1m">$500K - $1M</SelectItem>
-                        <SelectItem value="1m-5m">$1M - $5M</SelectItem>
-                        <SelectItem value="5m-10m">$5M - $10M</SelectItem>
-                        <SelectItem value="over-10m">{">$10M"}</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
 
               <FormField
                 control={form.control}
@@ -224,7 +197,7 @@ export default function ContactSection() {
                     <FormControl>
                       <Textarea
                         rows={4}
-                        placeholder="Tell us about your specific needs and investment objectives..."
+                        placeholder="How can we help?"
                         className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-tid-blue focus:border-transparent transition-all"
                         {...field}
                       />

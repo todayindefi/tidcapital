@@ -4,8 +4,8 @@ export default function AboutSection() {
   const features = [
     {
       icon: Building,
-      title: "Institutional Focus",
-      description: "Purpose-built for institutions, family offices, and sophisticated investors seeking professional DeFi exposure with proper risk management."
+      title: "Proprietary Capital",
+      description: "TID Capital farms with company-owned capital across DeFi lending, liquidity, and yield opportunities."
     },
     {
       icon: Brain,
@@ -15,7 +15,7 @@ export default function AboutSection() {
     {
       icon: Settings,
       title: "Systematic Approach",
-      description: "Disciplined methodology combining quantitative metrics, qualitative assessment, and continuous monitoring for consistent performance."
+      description: "A methodology combining quantitative metrics, qualitative assessment, and ongoing monitoring."
     }
   ];
 
@@ -26,10 +26,10 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Research-Driven DeFi Investment
+            Research-Driven DeFi Strategies
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            TID Capital bridges the gap between DeFi research and institutional-grade investment products, delivering curated yield strategies backed by data and expertise.
+            TID Capital applies protocol research and onchain data to its own DeFi strategies and vault curation.
           </p>
         </div>
 

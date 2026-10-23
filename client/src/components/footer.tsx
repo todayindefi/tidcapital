@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Professional DeFi yield farming and proprietary trading strategies for institutional and sophisticated investors seeking superior risk-adjusted returns.
+              Proprietary DeFi yield strategies, onchain lending markets, and non-custodial vault curation.
             </p>
           </div>
           
@@ -65,10 +65,10 @@ export default function Footer() {
                 <strong>Investment Risk:</strong> All DeFi investments carry significant risks including total loss of capital. Past performance does not guarantee future results. TID Capital vault strategies involve complex DeFi protocols with smart contract, liquidity, and market risks.
               </p>
               <p>
-                <strong>Regulatory Notice:</strong> TID Capital services are intended for qualified institutional investors and accredited individuals only. Our products are not registered securities and may not be suitable for all investors. Please consult with qualified financial advisors.
+                <strong>Risk Considerations:</strong> DeFi strategies involve substantial risks, including smart-contract vulnerabilities, collateral depegs, liquidity shortages, borrower insolvency, and partial or total loss of capital.
               </p>
               <p>
-                <strong>No Guarantee:</strong> Yield estimates are projections based on current market conditions and are not guaranteed. Actual returns may vary significantly and losses are possible. All investments are subject to market volatility and regulatory changes.
+                <strong>Not an Offer:</strong> Nothing on this website is an offer or solicitation to buy or sell any security or other financial product, or investment advice.
               </p>
             </div>
           </div>
@@ -78,10 +78,6 @@ export default function Footer() {
               © 2025 TID Capital. All rights reserved.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Risk Disclosure</a>
-              <a href="#" className="hover:text-white transition-colors">Compliance</a>
             </div>
           </div>
         </div>
