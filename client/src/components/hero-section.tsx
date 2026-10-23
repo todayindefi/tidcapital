@@ -44,7 +44,7 @@ export default function HeroSection() {
             <div className="mt-8 flex items-center space-x-6 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center">
                 <Shield className="w-5 h-5 text-tid-blue mr-2" />
-                Risk Management
+                Risk Assessment
               </div>
               <div className="flex items-center">
                 <TrendingUp className="w-5 h-5 text-tid-blue mr-2" />
