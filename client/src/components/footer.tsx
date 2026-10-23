@@ -32,9 +32,6 @@ export default function Footer() {
             </h4>
             <div className="text-xs text-gray-300 space-y-2">
               <p>
-                <strong>Investment Risk:</strong> All DeFi investments carry significant risks including total loss of capital. Past performance does not guarantee future results. TID Capital vault strategies involve complex DeFi protocols with smart contract, liquidity, and market risks.
-              </p>
-              <p>
                 <strong>Risk Considerations:</strong> DeFi strategies involve substantial risks, including smart-contract vulnerabilities, collateral depegs, liquidity shortages, borrower insolvency, and partial or total loss of capital.
               </p>
               <p>
