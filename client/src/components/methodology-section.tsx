@@ -6,11 +6,11 @@ export default function MethodologySection() {
     },
     {
       title: "APY Risk Analysis", 
-      description: "Assessment of yield sustainability, emission schedules, tokenomics, and historical APY patterns to predict long-term viability."
+      description: "Assessment of yield sustainability, emission schedules, tokenomics, and historical APY patterns to assess long-term viability."
     },
     {
       title: "Smart Contract Security",
-      description: "Comprehensive audit review, code analysis, team credentials, and track record evaluation to minimize technical risks."
+      description: "Comprehensive audit review, code analysis, team credentials, and track record evaluation to assess technical risks."
     },
     {
       title: "Peg Risk Monitoring",
@@ -19,7 +19,7 @@ export default function MethodologySection() {
   ];
 
   const riskScores = [
-    { level: "Low Risk", score: "1-3", color: "green", allocation: "Conservative allocation" },
+    { level: "Lower Risk", score: "1-3", color: "green", allocation: "Relatively lower assessed risk" },
     { level: "Moderate", score: "4-6", color: "yellow", allocation: "Balanced exposure" },
     { level: "High Risk", score: "7-8", color: "orange", allocation: "Limited allocation" },
     { level: "Extreme", score: "9-10", color: "red", allocation: "Avoid or minimal" }
@@ -43,7 +43,7 @@ export default function MethodologySection() {
             Risk Assessment Framework
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Our comprehensive methodology evaluates every opportunity across four critical risk dimensions to ensure sustainable, risk-adjusted returns.
+            We assess each opportunity across four risk dimensions before and during deployment.
           </p>
         </div>
 
@@ -102,6 +102,9 @@ export default function MethodologySection() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-sm text-gray-500 dark:text-gray-400 text-center max-w-3xl mx-auto">
+            Scores are internal, relative assessments based on the information available at the time. They can change quickly and do not predict or guarantee that any asset or strategy will avoid losses.
+          </p>
         </div>
       </div>
     </section>

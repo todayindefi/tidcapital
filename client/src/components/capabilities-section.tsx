@@ -5,17 +5,17 @@ export default function CapabilitiesSection() {
     {
       icon: TrendingUp,
       title: "Proprietary Yield Farming",
-      description: "Advanced DeFi yield farming strategies developed through proprietary quantitative models and market analysis, optimized for institutional returns."
+      description: "Research and deployment of company-owned capital across DeFi lending, liquidity, and yield opportunities."
     },
     {
       icon: BarChart3,
       title: "Automated Monitoring Systems",
-      description: "Advanced risk monitoring and automated data gathering systems for tracking farm performance, risk metrics, and protocol stability."
+      description: "Automated onchain data gathering for tracking position performance, risk metrics, and protocol stability."
     },
     {
       icon: Shield,
-      title: "Comprehensive Risk Management",
-      description: "Advanced risk assessment covering asset risk, protocol risk, APY risk, and peg risk, using tranching and diversification strategies."
+      title: "Risk Assessment",
+      description: "Analysis of collateral assets, liquidity conditions, protocol security, counterparty exposures, and changing market conditions."
     },
     {
       icon: Search,
@@ -25,12 +25,12 @@ export default function CapabilitiesSection() {
     {
       icon: Target,
       title: "Vault Curation",
-      description: "Selective curation of third-party vaults and strategies that meet our strict risk-adjusted return criteria and institutional standards."
+      description: "Selection and management of eligible markets and allocations for non-custodial DeFi vaults, subject to each vault's technical permissions."
     },
     {
       icon: Zap,
       title: "Market Intelligence",
-      description: "Real-time news flow keeping us on top of the latest farms, airdrops, and yield generating protocols for optimal opportunity capture."
+      description: "Tracking new farms, protocol launches, and changes to existing yield opportunities."
     }
   ];
 
@@ -42,7 +42,7 @@ export default function CapabilitiesSection() {
             Professional DeFi Yield Farming
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Our comprehensive approach combines proprietary trading algorithms, institutional risk management, and selective vault curation to deliver superior risk-adjusted returns in DeFi markets.
+            We research, deploy, and monitor our own capital across DeFi protocols, and curate non-custodial vaults.
           </p>
         </div>
         

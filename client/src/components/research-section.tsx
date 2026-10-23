@@ -79,7 +79,7 @@ export default function ResearchSection() {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                 Research Impact
               </h3>
-              <div className="grid grid-cols-2 gap-4 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   <div className="text-2xl font-bold text-tid-blue">200+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Research Reports</div>
@@ -91,10 +91,6 @@ export default function ResearchSection() {
                 <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   <div className="text-2xl font-bold text-tid-blue">17K+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Community Members</div>
-                </div>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-blue">12-20%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Stable APY</div>
                 </div>
               </div>
             </div>
