@@ -1,22 +1,31 @@
-import { Newspaper, Microscope, Users, ExternalLink } from "lucide-react";
+import { Newspaper, Microscope, ShieldCheck } from "lucide-react";
 
 export default function ResearchSection() {
   const researchFeatures = [
     {
-      icon: Newspaper,
-      title: "Market Intelligence",
-      description: "Real-time analysis of DeFi trends, protocol updates, and market movements that impact yield opportunities."
+      icon: ShieldCheck,
+      title: "Asset & Protocol Risk Scoring",
+      description: "Assets are scored on volatility, liquidity, structure, redemption, and issuer risk; protocols on contract, economic, and project risk. Scores are revisited as conditions change."
     },
     {
       icon: Microscope,
-      title: "On-Chain Analysis", 
-      description: "Deep-dive research into protocol mechanics, tokenomics, and on-chain metrics for informed strategy development."
+      title: "Security & Admin Review",
+      description: "Review of upgradeability, multisig and timelock setups, admin permissions, audits, and past incidents, including forensic analysis where public post-mortems are thin."
     },
     {
-      icon: Users,
-      title: "Community Network",
-      description: "Access to insights from the Today in DeFi community of researchers, developers, and DeFi practitioners."
+      icon: Newspaper,
+      title: "Backing & Market Monitoring",
+      description: "Ongoing tracking of stablecoin pegs, collateral backing, lending market utilization, and oracle behavior across the protocols we use."
     }
+  ];
+
+  const researchAreas = [
+    "Stablecoin and collateral backing",
+    "Lending market health",
+    "Smart-contract and admin permissions",
+    "Oracles and price feeds",
+    "Liquidity and exit conditions",
+    "Security incidents and exploits"
   ];
 
   return (
@@ -25,10 +34,10 @@ export default function ResearchSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Powered by <span className="text-tid-black">Today in DeFi</span> Research
+              Proprietary <span className="text-tid-black">DeFi Research</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              TID Capital strategies are built on the foundation of comprehensive DeFi research from Today in DeFi, combining market intelligence, protocol analysis, and community insights.
+              TID Capital builds its own risk research and monitoring tools to evaluate opportunities before deployment and track positions afterward.
             </p>
             
             <div className="space-y-6">
@@ -51,48 +60,20 @@ export default function ResearchSection() {
                 );
               })}
             </div>
-
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://todayindefi.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-tid-black hover:text-red-700 dark:hover:text-red-400 font-semibold transition-colors"
-              >
-                Visit Today in DeFi 
-                <ExternalLink className="ml-2 w-4 h-4" />
-              </a>
-              <a
-                href="https://tidresearch.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-tid-black hover:text-red-700 dark:hover:text-red-400 font-semibold transition-colors"
-              >
-                TID Research Portal 
-                <ExternalLink className="ml-2 w-4 h-4" />
-              </a>
-            </div>
           </div>
           
           <div className="relative">
             <div className="rounded-xl shadow-lg bg-white dark:bg-gray-900 p-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-                Research Impact
+                Research Focus
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-blue">200+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Research Reports</div>
-                </div>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-blue">300+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Protocols Analyzed</div>
-                </div>
-                <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-tid-blue">17K+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-300">Community Members</div>
-                </div>
-              </div>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {researchAreas.map((area) => (
+                  <li key={area} className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 text-center">
+                    {area}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

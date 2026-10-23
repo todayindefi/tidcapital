@@ -45,25 +45,6 @@ export default function Navigation() {
             </div>
           </div>
           <div className="flex items-center space-x-3">
-            <div className="hidden lg:flex items-center space-x-4 text-xs">
-              <a
-                href="https://todayindefi.com"
-                className="text-gray-500 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Today in DeFi
-              </a>
-              <span className="text-gray-300 dark:text-gray-600">|</span>
-              <a
-                href="https://tidresearch.com"
-                className="text-gray-500 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TID Research
-              </a>
-            </div>
             <Button
               variant="ghost"
               size="icon"
@@ -100,22 +81,6 @@ export default function Navigation() {
                     </button>
                   ))}
                   <div className="border-t pt-6 space-y-4">
-                    <a
-                      href="https://todayindefi.com"
-                      className="block text-gray-600 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Today in DeFi
-                    </a>
-                    <a
-                      href="https://tidresearch.com"
-                      className="block text-gray-600 dark:text-gray-400 hover:text-tid-black dark:hover:text-tid-black transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      TID Research
-                    </a>
                     <Button
                       onClick={() => scrollToSection("contact")}
                       className="w-full bg-tid-black hover:bg-tid-black-dark text-white"

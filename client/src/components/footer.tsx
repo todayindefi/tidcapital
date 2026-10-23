@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-tid-dark text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div>
             <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -18,40 +18,10 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li><a href="#capabilities" className="hover:text-white transition-colors">Yield Farming</a></li>
-              <li><a href="#capabilities" className="hover:text-white transition-colors">Proprietary Trading</a></li>
               <li><a href="#capabilities" className="hover:text-white transition-colors">Vault Curation</a></li>
-              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Management</a></li>
+              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Assessment</a></li>
             </ul>
           </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Research Network</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>
-                <a 
-                  href="https://todayindefi.com" 
-                  className="hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Today in DeFi
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://tidresearch.com" 
-                  className="hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TID Research
-                </a>
-              </li>
-
-            </ul>
-          </div>
-          
-
         </div>
         
         <div className="border-t border-gray-700 pt-8">
@@ -61,9 +31,6 @@ export default function Footer() {
               Important Disclaimer
             </h4>
             <div className="text-xs text-gray-300 space-y-2">
-              <p>
-                <strong>Investment Risk:</strong> All DeFi investments carry significant risks including total loss of capital. Past performance does not guarantee future results. TID Capital vault strategies involve complex DeFi protocols with smart contract, liquidity, and market risks.
-              </p>
               <p>
                 <strong>Risk Considerations:</strong> DeFi strategies involve substantial risks, including smart-contract vulnerabilities, collateral depegs, liquidity shortages, borrower insolvency, and partial or total loss of capital.
               </p>

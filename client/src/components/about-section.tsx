@@ -9,8 +9,8 @@ export default function AboutSection() {
     },
     {
       icon: Brain,
-      title: "Research Advantage",
-      description: "Leveraging Today in DeFi's research infrastructure and community network to identify opportunities before they become mainstream."
+      title: "Research-Led",
+      description: "In-house protocol and risk research informs which opportunities we pursue and how we monitor them."
     },
     {
       icon: Settings,

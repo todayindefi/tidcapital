@@ -20,7 +20,7 @@ export default function CapabilitiesSection() {
     {
       icon: Search,
       title: "DeFi Research & Intelligence",
-      description: "Understanding and analyzing DeFi protocols, yield opportunities, points programs, and risk-adjusted yield backed by Today in DeFi news flow."
+      description: "Understanding and analyzing DeFi protocols, yield opportunities, points programs, and the risks behind each yield source."
     },
     {
       icon: Target,
