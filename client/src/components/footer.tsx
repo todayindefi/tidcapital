@@ -19,7 +19,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-300">
               <li><a href="#capabilities" className="hover:text-white transition-colors">Yield Farming</a></li>
               <li><a href="#capabilities" className="hover:text-white transition-colors">Vault Curation</a></li>
-              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Management</a></li>
+              <li><a href="#methodology" className="hover:text-white transition-colors">Risk Assessment</a></li>
             </ul>
           </div>
           
