@@ -5,12 +5,12 @@ export default function MethodologySection() {
       description: "Evaluation of underlying asset quality, market depth, volatility patterns, and correlation dynamics to assess fundamental stability."
     },
     {
-      title: "APY Risk Analysis", 
-      description: "Assessment of yield sustainability, emission schedules, tokenomics, and historical APY patterns to assess long-term viability."
+      title: "Yield Source Analysis",
+      description: "Assessment of where yield comes from, including emission schedules, incentives, and tokenomics, to assess how sustainable it may be."
     },
     {
       title: "Smart Contract Security",
-      description: "Comprehensive audit review, code analysis, team credentials, and track record evaluation to assess technical risks."
+      description: "Review of available audits, contract code, upgradeability and admin permissions, and the team's track record to assess technical risks."
     },
     {
       title: "Peg Risk Monitoring",

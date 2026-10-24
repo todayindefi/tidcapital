@@ -42,7 +42,7 @@ export default function Footer() {
           
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div>
-              © 2025 TID Capital. All rights reserved.
+              © {new Date().getFullYear()} TID Capital. All rights reserved.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
             </div>
