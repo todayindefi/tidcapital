@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
@@ -15,9 +14,6 @@ import { insertContactInquirySchema } from "@shared/schema";
 
 const formSchema = insertContactInquirySchema.extend({
   website: z.string().optional(),
-  terms: z.boolean().refine(val => val === true, {
-    message: "You must agree to the terms and conditions"
-  })
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -35,12 +31,11 @@ export default function ContactSection() {
       inquiryType: "",
       aum: "",
       message: "",
-      terms: false
     }
   });
 
   const submitMutation = useMutation({
-    mutationFn: async (data: Omit<FormData, 'terms'>) => {
+    mutationFn: async (data: FormData) => {
       return await apiRequest("POST", "/api/contact", data);
     },
     onSuccess: () => {
@@ -64,8 +59,7 @@ export default function ContactSection() {
 
   const onSubmit = (data: FormData) => {
     setIsSubmitting(true);
-    const { terms, ...submitData } = data;
-    submitMutation.mutate(submitData);
+    submitMutation.mutate(data);
   };
 
   return (
@@ -203,35 +197,6 @@ export default function ContactSection() {
                       />
                     </FormControl>
                     <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="terms"
-                render={({ field }) => (
-                  <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                    <FormControl>
-                      <Checkbox
-                        checked={field.value}
-                        onCheckedChange={field.onChange}
-                        className="data-[state=checked]:bg-tid-blue data-[state=checked]:border-tid-blue"
-                      />
-                    </FormControl>
-                    <div className="space-y-1 leading-none">
-                      <FormLabel className="text-sm text-gray-600 dark:text-gray-300">
-                        I agree to the{" "}
-                        <a href="#" className="text-tid-blue hover:underline">
-                          Terms of Service
-                        </a>{" "}
-                        and{" "}
-                        <a href="#" className="text-tid-blue hover:underline">
-                          Privacy Policy
-                        </a>
-                      </FormLabel>
-                      <FormMessage />
-                    </div>
                   </FormItem>
                 )}
               />
