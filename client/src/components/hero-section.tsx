@@ -24,7 +24,7 @@ export default function HeroSection() {
               Farming
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              TID Capital focuses on proprietary DeFi yield strategies, onchain lending markets, and non-custodial vault curation. Our approach combines protocol research, collateral analysis, portfolio monitoring, and active risk assessment.
+              TID Capital focuses on DeFi yield farming strategies, onchain lending markets, and non-custodial vault curation. Our approach combines protocol research, collateral analysis, portfolio monitoring, and active risk assessment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -59,8 +59,8 @@ export default function HeroSection() {
                 <div className="text-lg text-gray-600 dark:text-gray-300">Active Strategies</div>
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
                   <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-lg font-bold text-tid-blue">Proprietary</div>
-                    <div className="text-gray-600 dark:text-gray-300">Capital Deployment</div>
+                    <div className="text-lg font-bold text-tid-blue">Non-custodial</div>
+                    <div className="text-gray-600 dark:text-gray-300">Vault Curation</div>
                   </div>
                   <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
                     <div className="text-lg font-bold text-tid-blue">Automated</div>
