@@ -4,8 +4,8 @@ export default function AboutSection() {
   const features = [
     {
       icon: Building,
-      title: "Proprietary Capital",
-      description: "TID Capital farms with company-owned capital across DeFi lending, liquidity, and yield opportunities."
+      title: "Farming Strategies",
+      description: "TID Capital designs and runs farming strategies across DeFi lending, liquidity, and yield opportunities."
     },
     {
       icon: Brain,
@@ -29,7 +29,7 @@ export default function AboutSection() {
             Research-Driven DeFi Strategies
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            TID Capital applies protocol research and onchain data to its own DeFi strategies and vault curation.
+            TID Capital applies protocol research and onchain data to its DeFi farming strategies and vault curation.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <img src={tidCapitalLogo} alt="TID Capital" className="h-8 w-auto mb-4" />
             <p className="text-gray-300 text-sm leading-relaxed">
-              Proprietary DeFi yield strategies, onchain lending markets, and non-custodial vault curation.
+              DeFi yield farming strategies, onchain lending markets, and non-custodial vault curation.
             </p>
           </div>
           

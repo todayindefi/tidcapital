@@ -4,8 +4,8 @@ export default function CapabilitiesSection() {
   const capabilities = [
     {
       icon: TrendingUp,
-      title: "Proprietary Yield Farming",
-      description: "Research and deployment of company-owned capital across DeFi lending, liquidity, and yield opportunities."
+      title: "Yield Farming Strategies",
+      description: "Research, deployment, and monitoring of farming strategies across DeFi lending, liquidity, and yield opportunities."
     },
     {
       icon: BarChart3,
@@ -42,7 +42,7 @@ export default function CapabilitiesSection() {
             Professional DeFi Yield Farming
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            We research, deploy, and monitor our own capital across DeFi protocols, and curate non-custodial vaults.
+            We research, deploy, and monitor farming strategies across DeFi protocols, and curate non-custodial vaults.
           </p>
         </div>
         
