@@ -41,7 +41,7 @@ export default function ContactSection() {
     onSuccess: () => {
       toast({
         title: "Message sent successfully!",
-        description: "Your inquiry has been sent to info@tid.capital. We'll get back to you within 24 hours.",
+        description: "Your inquiry has been sent to info@tid.capital. We'll be in touch.",
       });
       form.reset();
     },
