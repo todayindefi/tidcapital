@@ -64,7 +64,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.error("Contact form error:", error);
         res.status(500).json({
           success: false,
-          message: "Could not send your message, please email info@todayindefi.com directly"
+          message: "Could not send your message, please email info@tid.capital directly"
         });
       }
     }

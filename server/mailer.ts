@@ -42,7 +42,7 @@ export async function sendContactEmail(inquiry: InsertContactInquiry) {
 
   await transporter.sendMail({
     from: process.env.CONTACT_FROM || process.env.SMTP_USER,
-    to: process.env.CONTACT_TO || "info@todayindefi.com",
+    to: process.env.CONTACT_TO || "info@tid.capital",
     replyTo: inquiry.email,
     subject: `TID Capital inquiry: ${inquiry.inquiryType} from ${inquiry.name}`,
     text: lines.join("\n"),
