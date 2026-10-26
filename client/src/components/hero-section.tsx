@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingUp } from "lucide-react";
+import { Shield, TrendingUp, Check } from "lucide-react";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -8,6 +8,16 @@ export default function HeroSection() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const strategies = [
+    "Lending markets",
+    "Pendle fixed yield",
+    "Stablecoin LP",
+    "Perp DEX liquidity",
+    "Vault curation (Lagoon, Term Finance)",
+  ];
+
+  const yieldSources = ["Borrower demand", "Trading activity", "Fixed-rate markets", "Protocol incentives"];
 
   return (
     <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 py-20 lg:py-32">
@@ -54,18 +64,23 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <div className="rounded-2xl shadow-2xl bg-white dark:bg-gray-800 p-8">
-              <div className="text-center">
-                <div className="text-6xl font-bold text-tid-blue mb-2">12+</div>
-                <div className="text-lg text-gray-600 dark:text-gray-300">Active Strategies</div>
-                <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
-                  <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-lg font-bold text-tid-blue">Non-custodial</div>
-                    <div className="text-gray-600 dark:text-gray-300">Vault Curation</div>
-                  </div>
-                  <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                    <div className="text-lg font-bold text-tid-blue">Automated</div>
-                    <div className="text-gray-600 dark:text-gray-300">Onchain Monitoring</div>
-                  </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Strategies</h3>
+              <ul className="space-y-3">
+                {strategies.map((strategy) => (
+                  <li key={strategy} className="flex items-center text-gray-700 dark:text-gray-200">
+                    <Check className="w-5 h-5 text-tid-blue mr-3 flex-shrink-0" />
+                    {strategy}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <div className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Yield sources</div>
+                <div className="flex flex-wrap gap-2">
+                  {yieldSources.map((source) => (
+                    <span key={source} className="px-3 py-1 text-xs rounded-full bg-gray-50 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                      {source}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

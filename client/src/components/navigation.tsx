@@ -18,7 +18,7 @@ export default function Navigation() {
   };
 
   const navItems = [
-    { label: "Capabilities", id: "capabilities" },
+    { label: "Curation", id: "capabilities" },
     { label: "Methodology", id: "methodology" },
     { label: "Research", id: "research" },
     { label: "About", id: "about" },

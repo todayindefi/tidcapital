@@ -1,36 +1,36 @@
-import { Search, Shield, TrendingUp, BarChart3, Zap, Target } from "lucide-react";
+import { KeyRound, Gauge, ClipboardCheck, Droplets, Activity, FileText } from "lucide-react";
 
 export default function CapabilitiesSection() {
   const capabilities = [
     {
-      icon: TrendingUp,
-      title: "Yield Farming Strategies",
-      description: "Research, deployment, and monitoring of farming strategies across DeFi lending, liquidity, and yield opportunities."
+      icon: KeyRound,
+      title: "Multisig & Simulation",
+      description: "Vault operations run through a multisig, and transactions are simulated before execution to confirm their effects."
     },
     {
-      icon: BarChart3,
-      title: "Automated Monitoring Systems",
-      description: "Automated onchain data gathering for tracking position performance, risk metrics, and protocol stability."
+      icon: Gauge,
+      title: "Allocation Limits",
+      description: "Exposure is capped by asset, market, and protocol, with limits set from internal risk scores."
     },
     {
-      icon: Shield,
-      title: "Risk Assessment",
-      description: "Analysis of collateral assets, liquidity conditions, protocol security, counterparty exposures, and changing market conditions."
+      icon: ClipboardCheck,
+      title: "Market Onboarding",
+      description: "Before a market is used, its collateral, oracle, liquidity, and contract setup are assessed. Assets below our risk thresholds are not eligible for allocation."
     },
     {
-      icon: Search,
-      title: "DeFi Research & Intelligence",
-      description: "Understanding and analyzing DeFi protocols, yield opportunities, points programs, and the risks behind each yield source."
+      icon: Droplets,
+      title: "Liquidity Management",
+      description: "Idle liquidity is held to meet withdrawals and to allow deleveraging when conditions change."
     },
     {
-      icon: Target,
-      title: "Vault Curation",
-      description: "Selection and management of eligible markets and allocations for non-custodial DeFi vaults, subject to each vault's technical permissions."
+      icon: Activity,
+      title: "Position Monitoring",
+      description: "Every position is tracked onchain, including value, yield, rewards, and capital flows, so changes are caught early."
     },
     {
-      icon: Zap,
-      title: "Market Intelligence",
-      description: "Tracking new farms, protocol launches, and changes to existing yield opportunities."
+      icon: FileText,
+      title: "Detailed Reporting",
+      description: "Position-level records of entries, exits, rewards, and capital flows support detailed, verifiable reporting."
     }
   ];
 
@@ -39,10 +39,10 @@ export default function CapabilitiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Professional DeFi Yield Farming
+            How We Curate
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            We research, deploy, and monitor farming strategies across DeFi protocols, and curate non-custodial vaults.
+            Vault curation is about managing risk on behalf of depositors. These are the controls behind every allocation.
           </p>
         </div>
         
